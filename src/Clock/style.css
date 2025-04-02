@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.Clock__Container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,rgb(208, 208, 212),rgb(131, 131, 231));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Clock{
+    width: 600px;
+    min-height: 100px;
+    background: rgb(193, 162, 162);
+    color: #fff;
+    border-radius: 8px;
+    backdrop-filter: blur(40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    gap: 50px;
+    font-weight: 700;
+}
+
+/* #hrs::after{
+    content: 'HOURS';
+}
+
+#min::after{
+    content: 'MINS';
+}
+
+#sec::after{
+    content: 'SEC';
+} */
