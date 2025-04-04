@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="FormValidator.css">
+    <script src=""></script>
 </head>
 <body>
     <div class="container">
@@ -13,36 +14,39 @@
 
     <div class="input-group">
         <label>Full Name</label>
-       <input type="text" placeholder="Enter your name">
-       <span id="name-error">name is required</span>
+       <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+       <span id="name-error"></span>
     </div>
 
     <div class="input-group">
     <label>Phone No.</label>
-    <input type="tel" placeholder="123 456 7890">
-    <span id="phone-error">phone is required</span>
+    <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+    <span id="phone-error"></span>
 
     </div>
 
     <div class="input-group">
     <label>Email Id</label>
-    <input type="email" placeholder="Enter Email">
-    <span id="email">email is required</span>
+    <input type="email" placeholder="Enter Email"
+    id="contact-email" onkeyup="validateEmail()"  
+    >
+    <span id="email"></span>
     </div>
 
     <div class="input-group">
     <label>Your Message</label>
-    <textarea rows="5" placeholder="Enter your message">
+    <textarea rows="5" placeholder="Enter your message"
+    id="contact-message" onkeyup="validateMessage()"  
+    >
     </textarea>
-    <span id="message">message is required</span>
+    <span id="message"></span>
     </div>
 
-    <button>Submit</button>
-    <span id="submit-error">please fix error</span>
-    
+    <button onclick="return validateForm()">Submit</button>
+    <span id="submit-error"></span>
 
     </form>
     </div>
-    
+    <script src="./script.js  "></script>
 </body>
 </html>
